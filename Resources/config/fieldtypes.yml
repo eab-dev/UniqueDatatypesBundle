@@ -1,0 +1,27 @@
+parameters:
+    ezpublish.fieldType.ezuniquestring.class: Eab\UniqueDatatypesBundle\Core\FieldType\UniqueTextLine\Type
+    ezpublish.fieldType.ezuniqueurl.class: Eab\UniqueDatatypesBundle\Core\FieldType\UniqueUrl\Type
+    #ezpublish.fieldType.ezuniqueurl.storage_gateway.class: Eab\UniqueDatatypesBundle\Core\FieldType\UniqueUrl\UrlStorage\Gateway\LegacyStorage
+
+services:
+    ezpublish.fieldType.ezuniquestring:
+        class: %ezpublish.fieldType.ezuniquestring.class%
+        parent: ezpublish.fieldType
+        tags:
+            - { name: ezpublish.fieldType, alias: ezuniquestring }
+    ezpublish.fieldType.ezuniqueurl:
+        class: %ezpublish.fieldType.ezuniqueurl.class%
+        parent: ezpublish.fieldType
+        tags:
+            - { name: ezpublish.fieldType, alias: ezuniqueurl }
+    ezpublish.fieldType.ezuniqueurl.externalStorage:
+        class: %ezpublish.fieldType.ezurl.externalStorage.class%
+        arguments:
+            - []
+            - @?logger
+        tags:
+            - { name: ezpublish.fieldType.externalStorageHandler, alias: ezuniqueurl }
+    ezpublish.fieldType.ezuniqueurl.storage_gateway:
+        class: %ezpublish.fieldType.ezurl.storage_gateway.class%
+        tags:
+            - { name: ezpublish.fieldType.externalStorageHandler.gateway, alias: ezuniqueurl, identifier: LegacyStorage }

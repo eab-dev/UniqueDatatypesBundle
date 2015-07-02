@@ -1,0 +1,13 @@
+parameters:
+    ezpublish.fieldType.ezuniquestring.converter.class: Eab\UniqueDatatypesBundle\Core\Persistence\Legacy\Content\FieldValue\Converter\UniqueTextLineConverter
+    ezpublish.fieldType.ezuniqueurl.converter.class: Eab\UniqueDatatypesBundle\Core\Persistence\Legacy\Content\FieldValue\Converter\UniqueUrlConverter
+
+services:
+    ezpublish.fieldType.ezuniquestring.converter:
+        class: %ezpublish.fieldType.ezuniquestring.converter.class%
+        tags:
+            - {name: ezpublish.storageEngine.legacy.converter, alias: ezuniquestring, lazy: true, callback: "::create"}
+    ezpublish.fieldType.ezuniqueurl.converter:
+        class: %ezpublish.fieldType.ezuniqueurl.converter.class%
+        tags:
+            - {name: ezpublish.storageEngine.legacy.converter, alias: ezuniqueurl, lazy: true, callback: "::create"}

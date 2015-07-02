@@ -1,0 +1,17 @@
+{% extends "EzPublishCoreBundle::content_fields.html.twig" %}
+
+{% block ezuniquestring_field %}
+{% spaceless %}
+    {% set field_value = field.value.text %}
+    {{ block( 'simple_inline_field' ) }}
+{% endspaceless %}
+{% endblock %}
+
+{% block ezuniqueurl_field %}
+{% spaceless %}
+    {% if not ez_is_field_empty( content, field ) %}
+        <a href="{{ field.value.link }}"
+            {{ block( 'field_attributes' ) }}>{{ field.value.text ? field.value.text : field.value.link }}</a>
+    {% endif %}
+{% endspaceless %}
+{% endblock %}

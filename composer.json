@@ -1,0 +1,15 @@
+{
+    "name": "eab/eabuniquedatatypesbundle",
+    "description": "eZ Unique Datatypes extension for eZ Publish",
+    "license": "GPL-2.0",
+    "authors": [
+        { "name": "Piotrek Karaś", "homepage": "http://www.mediaself.pl" },
+        { "name": "Enterprise AB Ltd", "homepage": "http://eab.uk" }
+    ],
+    "require": {
+        "ezsystems/ezpublish-kernel": "*"
+    },
+    "autoload": {
+        "psr-4": { "Eab\\UniqueDatatypesBundle\\": "" }
+    }
+}
