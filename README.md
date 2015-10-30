@@ -36,9 +36,9 @@ Requires eZ Publish 5.
 Installation
 ------------
 
-1. If you have configured EAB's package repository you can use composer to install the bundle:
+1. You can use composer to install the bundle:
 
-        composer require --update-no-dev --prefer-dist eab/eabuniquedatatypesbundle
+        composer require --update-no-dev --prefer-dist eab/unique-datatypes-bundle
 
    Otherwise, clone the bundle using git:
 
