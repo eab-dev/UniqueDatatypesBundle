@@ -9,6 +9,9 @@
     "require": {
         "ezsystems/ezpublish-kernel": "*"
     },
+    "suggest": {
+        "eab/ezuniquedatatypes": "To edit this field type in legacy administration interface"
+    },
     "autoload": {
         "psr-4": { "Eab\\UniqueDatatypesBundle\\": "" }
     }
