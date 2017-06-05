@@ -2,7 +2,7 @@
 
 namespace Eab\UniqueDatatypesBundle\Core\Persistence\Legacy\Content\FieldValue\Converter;
 
-use eZ\Publish\Core\Persistence\Legacy\Content\FieldValue\Converter\Url as UrlConverter;
+use eZ\Publish\Core\Persistence\Legacy\Content\FieldValue\Converter\UrlConverter;
 
 /**
  * UniqueUrl field value converter class

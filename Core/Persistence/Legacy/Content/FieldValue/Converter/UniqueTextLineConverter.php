@@ -2,7 +2,7 @@
 
 namespace Eab\UniqueDatatypesBundle\Core\Persistence\Legacy\Content\FieldValue\Converter;
 
-use eZ\Publish\Core\Persistence\Legacy\Content\FieldValue\Converter\TextLine as TextLineConverter;
+use eZ\Publish\Core\Persistence\Legacy\Content\FieldValue\Converter\TextLineConverter;
 
 /**
  * UniqueTextLine field value converter class
