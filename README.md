@@ -31,16 +31,20 @@ Licensed under [GNU General Public License 2.0](http://www.gnu.org/licenses/gpl-
 
 Requirements
 ------------
-Requires eZ Publish 5.
+Requires eZ Publish 5 or [eZ Platform](https://ezplatform.com).
 
 Installation
 ------------
 
-1. You can use composer to install the bundle:
+1. You can use composer to install the bundle. If you have eZ Platform, use version 2:
 
-        composer require --update-no-dev --prefer-dist eab/unique-datatypes-bundle
+        composer require --update-no-dev --prefer-dist "eab/unique-datatypes-bundle":"~2.0"
 
-   Otherwise, clone the bundle using git:
+   If you have eZ Publish 5, use version 1:
+
+        composer require --update-no-dev --prefer-dist "eab/unique-datatypes-bundle":"~1.0"
+
+   Or clone the bundle using git:
 
         cd src
         git clone https://github.com/eab-dev/UniqueDatatypesBundle.git Eab/UniqueDatatypesBundle
