@@ -7,7 +7,7 @@
         { "name": "Enterprise AB Ltd", "homepage": "http://eab.uk" }
     ],
     "require": {
-        "ezsystems/ezpublish-kernel": "*"
+        "ezsystems/ezpublish-kernel": "~6.0"
     },
     "suggest": {
         "eab/ezuniquedatatypes": "To edit this field type in legacy administration interface"
