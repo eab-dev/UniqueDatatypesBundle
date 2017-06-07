@@ -1,6 +1,15 @@
 {
     "name": "eab/unique-datatypes-bundle",
     "description": "eZ Unique Datatypes extension for eZ Publish",
+    "type": "ezplatform-bundle",
+    "keywords": [
+        "eab",
+        "unique-datatypes-bundle",
+        "ezplatform",
+        "ezpublish",
+        "datatype"
+    ],
+    "homepage": "https://github.com/eab-dev/UniqueDatatypesBundle",
     "license": "GPL-2.0",
     "authors": [
         { "name": "Piotrek Karaś", "homepage": "http://www.mediaself.pl" },

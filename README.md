@@ -37,28 +37,38 @@ Installation
 ------------
 
 1. You can use composer to install the bundle. If you have eZ Platform, use version 2:
-
-        composer require --update-no-dev --prefer-dist "eab/unique-datatypes-bundle":"~2.0"
-
+    
+    ```bash
+    composer require --update-no-dev --prefer-dist "eab/unique-datatypes-bundle":"~2.0"
+    ```
+    
    If you have eZ Publish 5, use version 1:
-
-        composer require --update-no-dev --prefer-dist "eab/unique-datatypes-bundle":"~1.0"
-
+    
+    ```bash
+    composer require --update-no-dev --prefer-dist "eab/unique-datatypes-bundle":"~1.0"
+    ```
+    
    Or clone the bundle using git:
-
-        cd src
-        git clone https://github.com/eab-dev/UniqueDatatypesBundle.git Eab/UniqueDatatypesBundle
+   
+   ```bash
+    cd src
+    git clone https://github.com/eab-dev/UniqueDatatypesBundle.git Eab/UniqueDatatypesBundle
+    ```
 
 2. Edit the file `ezpublish/EzPublishKernel.php`, look for the function `registerBundles()` and add:
-
-        new Eab\UniqueDatatypesBundle\EabUniqueDatatypesBundle(),
+    
+    ```php
+    new Eab\UniqueDatatypesBundle\EabUniqueDatatypesBundle(),
+    ```
 
 3. Run (in Windows you should be administrator to create symlinks):
-
-        php ezpublish/console ezpublish:legacybundles:install_extensions
-        php ezpublish/console ezpublish:legacy:script bin/php/ezpgenerateautoloads.php
-        php ezpublish/console cache:clear --no-warmup --env=prod
-
+    
+    ```bash
+    php ezpublish/console ezpublish:legacybundles:install_extensions
+    php ezpublish/console ezpublish:legacy:script bin/php/ezpgenerateautoloads.php
+    php ezpublish/console cache:clear --no-warmup --env=prod
+    ```
+        
 4. Use eZ Publish's admin interface to add a field using this datatype to a content type and create some content.
 
 5. Test it in a Twig template using the `ez_render` function.
