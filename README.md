@@ -3,7 +3,7 @@ EabUniqueDatatypesBundle
 
 Summary
 -------
-eZ Publish 5 bundle wrapping [eZ Unique Datatypes](http://projects.ez.no/ez_unique_datatypes)
+eZ Publish 5/Platform bundle wrapping [eZ Unique Datatypes](https://github.com/eab-dev/ezuniquedatatypes)
 extension for eZ Publish 4.0.
 
 This is a collection of common datatypes whose validation has been extended
