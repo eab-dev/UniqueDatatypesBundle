@@ -25,3 +25,13 @@ services:
         class: "%ezpublish.fieldType.ezurl.storage_gateway.class%"
         tags:
             - { name: ezpublish.fieldType.externalStorageHandler.gateway, alias: ezuniqueurl, identifier: LegacyStorage }
+
+    ezpublish.fieldtype.indexable.ezuniquestring:
+        class: "%ezpublish.fieldType.indexable.ezstring.class%"
+        tags:
+            - {name: ezpublish.fieldType.indexable, alias: ezuniquestring}
+
+    ezpublish.fieldtype.indexable.ezuniqueurl:
+        class: "%ezpublish.fieldType.indexable.ezurl.class%"
+        tags:
+            - {name: ezpublish.fieldType.indexable, alias: ezuniqueurl}
