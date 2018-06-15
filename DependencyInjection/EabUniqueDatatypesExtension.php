@@ -37,7 +37,7 @@ class EabUniqueDatatypesExtension extends Extension implements PrependExtensionI
      */
     public function prepend( ContainerBuilder $container )
     {
-        $configFile = __DIR__ . '/../Resources/config/templates.yml';
+        $configFile = __DIR__ . '/../Resources/config/ezpublish.yml';
         $config = Yaml::parse( file_get_contents( $configFile ) );
         $container->prependExtensionConfig( 'ezpublish', $config );
         $container->addResource( new FileResource( $configFile ) );

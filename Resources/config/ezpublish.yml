@@ -1,0 +1,4 @@
+system:
+    default:
+        field_templates:
+            - {template: '@EabUniqueDatatypes/content_fields.html.twig', priority: 0}
