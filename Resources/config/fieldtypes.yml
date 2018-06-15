@@ -5,23 +5,23 @@ parameters:
 
 services:
     ezpublish.fieldType.ezuniquestring:
-        class: %ezpublish.fieldType.ezuniquestring.class%
+        class: "%ezpublish.fieldType.ezuniquestring.class%"
         parent: ezpublish.fieldType
         tags:
             - { name: ezpublish.fieldType, alias: ezuniquestring }
     ezpublish.fieldType.ezuniqueurl:
-        class: %ezpublish.fieldType.ezuniqueurl.class%
+        class: "%ezpublish.fieldType.ezuniqueurl.class%"
         parent: ezpublish.fieldType
         tags:
             - { name: ezpublish.fieldType, alias: ezuniqueurl }
     ezpublish.fieldType.ezuniqueurl.externalStorage:
-        class: %ezpublish.fieldType.ezurl.externalStorage.class%
+        class: "%ezpublish.fieldType.ezurl.externalStorage.class%"
         arguments:
             - []
-            - @?logger
+            - "@?logger"
         tags:
             - { name: ezpublish.fieldType.externalStorageHandler, alias: ezuniqueurl }
     ezpublish.fieldType.ezuniqueurl.storage_gateway:
-        class: %ezpublish.fieldType.ezurl.storage_gateway.class%
+        class: "%ezpublish.fieldType.ezurl.storage_gateway.class%"
         tags:
             - { name: ezpublish.fieldType.externalStorageHandler.gateway, alias: ezuniqueurl, identifier: LegacyStorage }

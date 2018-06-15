@@ -4,10 +4,10 @@ parameters:
 
 services:
     ezpublish.fieldType.ezuniquestring.converter:
-        class: %ezpublish.fieldType.ezuniquestring.converter.class%
+        class: "%ezpublish.fieldType.ezuniquestring.converter.class%"
         tags:
             - {name: ezpublish.storageEngine.legacy.converter, alias: ezuniquestring, lazy: true, callback: "::create"}
     ezpublish.fieldType.ezuniqueurl.converter:
-        class: %ezpublish.fieldType.ezuniqueurl.converter.class%
+        class: "%ezpublish.fieldType.ezuniqueurl.converter.class%"
         tags:
             - {name: ezpublish.storageEngine.legacy.converter, alias: ezuniqueurl, lazy: true, callback: "::create"}
