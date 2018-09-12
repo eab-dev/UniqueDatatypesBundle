@@ -1,4 +1,0 @@
-system:
-    default:
-        field_templates:
-            - { template: EabUniqueDatatypesBundle:content_fields.html, priority: 0 }
